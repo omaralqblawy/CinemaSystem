@@ -3,8 +3,8 @@
 #define UPDATE_PRICE_H
 
 #include "cinema_data.h"               // استيراد الهياكل
-using namespace std;                   // لتفادي std::
 
-void updateMoviePrice(vector<Movie>& movies, int movieId, double newPrice); // إعلان الدالة
+
+void updateMoviePrice(std::vector<Movie>& movies, int movieId, double newPrice); // إعلان الدالة
 
 #endif // UPDATE_PRICE_H
