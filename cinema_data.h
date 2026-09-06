@@ -4,7 +4,7 @@
 
 #include <string>                     // مكتبة النصوص (string)
 #include <vector>                     // مكتبة القوائم الديناميكية (vector)
-using namespace std;                  // للاختصار (عدم كتابة std::)
+                  // للاختصار (عدم كتابة std::)
 
 
 // 1. هيكل التاريخ
