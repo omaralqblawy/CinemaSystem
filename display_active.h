@@ -3,8 +3,8 @@
 #define DISPLAY_ACTIVE_H
 
 #include "cinema_data.h"               // استيراد هياكل البيانات
-using namespace std;                   // لتفادي كتابة std::
+              
 
-void displayActiveMovies(const vector<Movie>& movies); // إعلان الدالة
+void displayActiveMovies(const std::vector<Movie>& movies); // إعلان الدالة
 
 #endif // DISPLAY_ACTIVE_H
