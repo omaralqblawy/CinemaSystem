@@ -3,8 +3,8 @@
 #define DELETE_MOVIE_H
 
 #include "cinema_data.h"               // استيراد الهياكل
-using namespace std;                   // لتفادي std::
+                 
 
-bool deleteMovie(vector<Movie>& movies, int movieId, const vector<Booking>& bookings); // إعلان
+bool deleteMovie(std::vector<Movie>& movies, int movieId,  const std::vector<Booking>& bookings); // إعلان
 
 #endif // DELETE_MOVIE_H
