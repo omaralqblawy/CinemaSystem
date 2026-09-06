@@ -2,7 +2,7 @@
 #define ADD_NEW_HALL_H
 
 #include "cinema_data.h"            // استيراد هياكل Hall و vector وغيرها
-using namespace std;               // حسب طلبك لتفادي كتابة std::
+           
 
 /*
   دالة: إضافة صالة جديدة
