@@ -14,6 +14,6 @@
 };
 
 // تعريف قائمة الحجوزات فارغة كبداية
-std:: vector<Booking> bookings = { };      // لا حجوزات مبدئياً
+ static std:: vector<Booking> bookings = { };      // لا حجوزات مبدئياً
 
-int nextBookingId = STARTING_BOOKING_ID; // تهيئة معرف الحجز التالي
+static int nextBookingId = STARTING_BOOKING_ID; // تهيئة معرف الحجز التالي
