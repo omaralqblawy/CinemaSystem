@@ -13,7 +13,8 @@
         vector<vector<char>>(ROWS_DEFAULT, vector<char>(COLS_DEFAULT, 'O'))} // مقاعد مهيأة
 };
 
-// تعريف قائمة الحجوزات فارغة كبداية
- static std:: vector<Booking> bookings = { };      // لا حجوزات مبدئياً
-
-static int nextBookingId = STARTING_BOOKING_ID; // تهيئة معرف الحجز التالي
+// تعريف قائمة الحجوزات فارغة كبدايةاً
+namespace {
+    std::vector<Booking> bookings = {};
+ int nextBookingId = STARTING_BOOKING_ID; // تهيئة معرف الحجز التالي
+}
