@@ -15,9 +15,9 @@
 
 // تعريف قائمة الحجوزات فارغة كبدايةاً
  namespace {
-    // NOSONAR
-    std::vector<Booking> bookings = {};
     
-    // NOSONAR
-    int nextBookingId = STARTING_BOOKING_ID; // تهيئة معرف الحجز التالي
+    std::vector<Booking> bookings = {};  // NOSONAR
+    
+    
+    int nextBookingId = STARTING_BOOKING_ID;   // NOSONAR // تهيئة معرف الحجز التالي
 }
