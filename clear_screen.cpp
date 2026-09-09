@@ -1,11 +1,10 @@
-#include "clear_screen.h"               // تضمين الهيدر
-#include <iostream>                     // تضمين للإخراج
+#include "clear_screen.h"
+#include <iostream>
 
-// تنفيذ دالة مسح شاشة الكونسول
 void clearScreen() {
 #ifdef _WIN32
-    system("cls");                     // استخدام الأمر cls على ويندوز
+    system("cls");                     // ويندوز
 #else
-    cout << "\x1B[2J\x1B[H";           // إرسال تسلسل ANSI لمسح الشاشة على UNIX-like
+    std::cout << "\033[2J\033[H";      // لينكس وماك
 #endif
 }
