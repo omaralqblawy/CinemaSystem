@@ -1,28 +1,24 @@
-#include "display_halls.h"          // تضمين إعلان الدالة
-#include <iostream>                 // للإخراج
-#include <iomanip>                  // لتنسيق العرض (setw)
+#include "display_halls.h"    // تضمين إعلان الدالة
+#include <iostream>    // للإخراج
+#include <format>   //  C++20
 
-void displayAllHalls(const vector<Hall>& halls) {
-    if (halls.empty()) {           // إن لم توجد صالات
+void displayAllHalls(const std::vector<Hall>& halls) {
+    if (halls.empty()) {    // إن لم توجد صالات
         std::cout << "No halls available.\n";
         return;
     }
 
     // طباعة رأس جدول مبسط
-    std::cout << std::left << std::setw(6) << "ID"
-        << std::setw(20) << "Name"
-        << std::setw(8) << "Rows"
-        << std::setw(8) << "Cols"
-        << std::setw(6) << "VIP" << "\n";
+    std::cout << std::format("{:<6}{:<20}{:<8}{:<8}{:<6}\n", "ID", "Name", "Rows", "Cols", "VIP");
+    std::cout << std::string(48, '-') << "\n";
 
-    std::cout << std::string(48, '-') << "\n"; // فاصل
-
-    // طباعة صف لكل صالة
+    // صفوف الصالات
     for (const auto& h : halls) {
-        std::cout << std::left << std::setw(6) << h.hallId
-            << std::setw(20) << h.name
-            << std::setw(8) << h.rows
-            << std::setw(8) << h.cols
-            << std::setw(6) << (h.isVip ? "Yes" : "No") << "\n";
+        std::cout << std::format("{:<6}{:<20}{:<8}{:<8}{:<6}\n",
+            h.hallId,
+            h.name,
+            h.rows,
+            h.cols,
+            (h.isVip ? "Yes" : "No"));
     }
 }
