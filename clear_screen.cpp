@@ -5,6 +5,6 @@ void clearScreen() {
 #ifdef _WIN32
     system("cls");                     // ويندوز
 #else
-    std::cout << "\033[2J\033[H";      // لينكس وماك
+    std::cout << "\033" "[2J" "\033" "[H";  // لينكس وماك
 #endif
 }
