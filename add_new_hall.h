@@ -1,8 +1,7 @@
 #ifndef ADD_NEW_HALL_H              // حماية من التضمين المتكرر
 #define ADD_NEW_HALL_H
 
-#include "cinema_data.h"            // استيراد هياكل Hall و vector وغيرها
-           
+#include "CinemaData.h"             // استيراد هياكل Hall و vector
 
 /*
   دالة: إضافة صالة جديدة
@@ -11,4 +10,4 @@
 */
 void addNewHall(vector<Hall>& halls);
 
-#endif // ADD_NEW_HALL_H#pragma once
+#endif // ADD_NEW_HALL_H
