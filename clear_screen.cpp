@@ -3,8 +3,9 @@
 
 void clearScreen() {
 #ifdef _WIN32
-    system("cls");                     // ويندوز
+    system("cls");                          // ويندوز
 #else
-    std::cout << "\033" "[2J" "\033" "[H";  // لينكس وماك
+    const char ESC = 27;                    // رمز الهروب ESC (27 = \033)
+    std::cout << ESC << "[2J" << ESC << "[H"; // لينكس وماك
 #endif
 }
